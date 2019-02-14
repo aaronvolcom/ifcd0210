@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generos SYSTEM "Documento1dtd.dtd">
+<catalog>  
+<CD>  
+  <Generos id="Metal">
+  
+             <Author>A Perfect Circle</Author>  
+      <Title>Mer De Noms</Title>  
+      <Genre>Progressive Metal</Genre>  
+      <Price>12'95€</Price>  
+      <PublishDate>23/05/2000</PublishDate>  
+      <Discografia>virgin records</Discografia>
+      
+      <Author>Slipknot</Author>  
+      <Title>Vol. 3 The Subliminal Verses</Title>  
+      <Genre>Alternative Metal</Genre>  
+      <Price>7'99€</Price>  
+      <PublishDate>24/05/2004</PublishDate>  
+      <Discografia>Roadrunner Records</Discografia>  
+      
+    </Generos>  
+     <Generos id="Slam">  
+     
+      <Author>Slaughter to Prevail</Author>  
+      <Title>Misery Sermon</Title>  
+      <Genre>Slam</Genre>  
+      <Price>14.10€</Price>  
+      <PublishDate>04/05/2017</PublishDate>  
+      <Discografia>Sumerian Records</Discografia>  
+      
+       <Author>Lacerate Thy Maker</Author>  
+      <Title> Imminent</Title>  
+      <Genre>Slam/Deathcore</Genre>  
+      <Price>14.10€</Price>  
+      <PublishDate>08/05/2018</PublishDate>  
+      <Discografia>SlamWorldwide</Discografia>  
+      
+      </Generos>  
+      <Generos id="HardCore">  
+     
+      <Author>Brutality Will Prevail</Author>  
+      <Title>Scatter the Ashes</Title>  
+      <Genre>Hardcore/Deathcore</Genre>  
+      <Price>27.99€</Price>  
+      <PublishDate>12/05/2015</PublishDate>  
+      <Discografia>Siege Of Amida</Discografia>  
+      
+       <Author>Knocked Loose</Author>  
+      <Title>Laugh Tracks</Title>  
+      <Genre>Hardcore/Deathcore</Genre>  
+      <Price>21.41€</Price>  
+      <PublishDate>15/09/2016</PublishDate>  
+      <Discografia>Pure Noise Records</Discografia>  
+      
+      </Generos>  
+      
+   </CD>
+</catalog>  
