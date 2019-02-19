@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	overflow:hidden;
+}
+
+#m {
+  background-image: url("http://www.wallpapermaiden.com/image/2016/06/16/sci-fi-planet-different-space-1205.jpg");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  animation: kenburns-right 60s ease-out both;
+	width: 100%;
+	height:500px;
+	position:absolute;
+	z-index:-3;
+}
+
+@keyframes kenburns-right {
+  0% {
+    transform: scale(1.5) translate(0, 0);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scale(1.30) translateX(20px);
+    transform-origin: right;
+  }
+}
+
+.calc {
+  width: 272px;
+  margin: 80px auto;
+  background: #4C4C4E;
+  background-image: linear-gradient(to left, #4C4C4E, 95%, #535355, #4C4C4E);
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #2B2B2B;
+
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.7), -1px -1px 6px rgba(0,0,0,0.3);
+}
+
+.window {
+  height: 1.5em;
+  line-height: 1.5em;
+  width: 100%;
+  background: #69AF6A;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  color: #000;
+  text-align: right;
+  padding: 0 10px;
+  margin-bottom: 5px;
+  font-size: 2em;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.btn {
+  margin: 4px 0 0 0;
+  display: inline-block;
+  width: 64.75px;
+  height: 50px;
+  background: ;
+  line-height: 46px;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  font-size: 1em;
+  transition: 0.3s ease-in-out;
+  border-radius: 3px;
+
+  background: #99999B;
+  
+  color: #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+
+}
+
+.btn:active{
+  transform: scale(0.8);
+}
+
+.equals {
+  width: 133px;
+}
