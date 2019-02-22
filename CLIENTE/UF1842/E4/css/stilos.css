@@ -1,11 +1,11 @@
-@charset "utf-8";
+
 /* CSS Document */
 
 
 /* Body */
 body{
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-	background-color: black;
+	background: black;
 	margin: 0;
 	width:;
 	margin: auto;
@@ -61,6 +61,9 @@ body{
   text-decoration: none;
   color: #333;
 }
+
+
+
 .popup .close:hover {
   color: #06D85F;
 }
@@ -123,6 +126,11 @@ header {
 
 }
 
+/*reproductor*/
+
+
+/*reproductro*/
+
 
 nav{
 	width: 100%;
@@ -139,13 +147,13 @@ catalog{
 	color:#FFFFFF
 }
 
-div{
+/*div{
 	width: 95%;
 	height:auto;
 	background-color:#1D1D1D;
 	margin: auto;
 	margin-top: 15px;
-}
+}*/
 
 a{
 	text-decoration: none;
@@ -194,6 +202,7 @@ table.discos {
   line-height: 2;
   border: 1px solid #ddd;
   border-radius: .25em;
+	margin-bottom: 20px;
 }
 
 .read-more-target img{
@@ -210,6 +219,6 @@ generos{
 	width: 50%;
 }
 
-footer{
-	position: fixed;
+#volver{
+	margin-top:20px;
 }
