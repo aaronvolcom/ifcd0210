@@ -7,7 +7,7 @@
     
     margin:auto;
     border-radius: 50%;
-    border: 1px solid #D0D0D0;
+    border: 1px solid GREY;
 	
 }
 
@@ -60,7 +60,7 @@
     width: 250px;
     height: 5px;
     position: absolute;
-    background-color: #A6A7A9;
+    background-color: #272727;
     bottom: 115px;
     z-index: 10;
     cursor: pointer;
@@ -69,14 +69,14 @@
     float: left;
     height: 5px;
     width: 0%;
-    background: #00CC99;
+    background: #E2E2E2;
     cursor: pointer;
 }
 #handler {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: #00CC99;
+    background-color: #ACACAC;
     top: 50%;
     left: 0%;
     margin-left: -10px;
@@ -90,14 +90,14 @@
     height: 50px;
     vertical-align: top;
     background-color: #FFF;
-    border: 2px solid #00CC99;
+    border: 2px solid #000000;
     border-radius: 50%;
     outline: none;
     margin: 0 7px;
     cursor: pointer;
 }
 .nov:hover {
-    background-color: #00CC99;
+    background-color: #000000;
 }
 .nov img {
     height: 20px;

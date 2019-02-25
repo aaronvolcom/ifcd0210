@@ -87,12 +87,12 @@ play.onclick = function () {
     playing ? audio.pause() : audio.play();
 }
 audio.addEventListener("pause", function () {
-    play.innerHTML = '<img class="pad" src="http://abarcarodriguez.com/lab/play.png" />';
+    play.innerHTML = '<img class="pad" src="img/play.png" />';
     playing = false;
 }, false);
 
 audio.addEventListener("playing", function () {
-    play.innerHTML = '<img src="http://abarcarodriguez.com/lab/pause.png" />';
+    play.innerHTML = '<img src="img/pause.png" />';
     playing = true;
 }, false);
 next.addEventListener("click", nextTrack, false);
