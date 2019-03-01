@@ -1,0 +1,10 @@
+﻿<!ELEMENT catalog (CD)>
+   <!ELEMENT CD (Generos)+>
+   <!ELEMENT Generos (Author,Title,Genre,Price,PublishDate,Discografia)*>
+   <!ELEMENT Author (#PCDATA)>
+   <!ELEMENT Title (#PCDATA)>
+   <!ELEMENT Genre (#PCDATA)>
+   <!ELEMENT Price (#PCDATA)>
+   <!ELEMENT PublishDate (#PCDATA)>
+   <!ELEMENT Discografia (#PCDATA)>
+   <!ATTLIST Generos id ID #REQUIRED>
