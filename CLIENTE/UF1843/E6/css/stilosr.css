@@ -1,0 +1,114 @@
+
+
+#player {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    
+    margin:auto;
+    border-radius: 50%;
+    border: 1px solid GREY;
+	
+}
+
+#player .cover {
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left:0;
+    border-radius: 50%;
+}
+#player .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+#player .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 120px;
+    background-color: #FFF;
+}
+#player .info .cont {
+    text-align: center;
+    padding-top: 25px;
+}
+#player .trackinfo {
+    position: absolute;
+    bottom: 120px;
+    color: #FFF;
+}
+#player .trackinfo p {
+    text-shadow: 0px 0px 5px #333;
+}
+#player .trackinfo #title {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+#player .trackinfo #artist {
+    padding-left: 15px;
+}
+#track {
+    width: 250px;
+    height: 5px;
+    position: absolute;
+    background-color: #272727;
+    bottom: 115px;
+    z-index: 10;
+    cursor: pointer;
+}
+#progress {
+    float: left;
+    height: 5px;
+    width: 0%;
+    background: #E2E2E2;
+    cursor: pointer;
+}
+#handler {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ACACAC;
+    top: 50%;
+    left: 0%;
+    margin-left: -10px;
+    margin-top: -10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+}
+.nov {
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+    background-color: #FFF;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    outline: none;
+    margin: 0 7px;
+    cursor: pointer;
+}
+.nov:hover {
+    background-color: #000000;
+}
+.nov img {
+    height: 20px;
+    vertical-align: middle;
+}
+.pad {
+    padding-left: 5px;
+}
+#prev {
+    padding-right: 5px;
+}
+#next {
+    padding-left: 4px;
+}

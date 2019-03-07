@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: black;
+}
+
+
+
+.over{
+display:block;
+width: 1000px;
+height: 400px;
+background: url("../img/logo blanc.png");
+background-repeat: no-repeat;
+margin-top:-100px;
+margin-left:-500px;
+left: 50%;
+top: 50%;
+position: absolute;
+}
+ 
+.over:hover{
+width: 900px;
+height: 500px;
+background: url("../img/carnero.jpg");
+background-size: 900px 500px;
+background-repeat: no-repeat;
+margin-top:-300px;
+margin-left:-500px;
+left: 50%;
+top: 50%;
+position: absolute;
+	
+	
+}
+
+
+
+
+
