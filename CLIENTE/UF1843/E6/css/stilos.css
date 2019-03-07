@@ -11,6 +11,11 @@ body{
 	
 }
 
+#q{
+	background-color: black;
+	color: white;
+}
+
 
 .scale-up-center {
 	-webkit-animation: scale-up-center 2.5s ;
