@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MetalWorld</title>
+<link href="css/stilos.css" rel="stylesheet" type="text/css">
+<link href="css/stilosr.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+	
+	
+	<script> 
+		var z= 0; 
+		var h= 0;
+		var fontSize = 1;
+	</script>
+	
+	
+<center>
+  <a id="p" href="inicio.html"><img id="e" class="scale-up-center" src="img/logoblanc.png" width="943" height="122" alt="METALWORLD" title="Logo de la web"></a>
+  <header>
+    <div id="navar">
+      <nav>
+        <table border=0;
+		   width=100%;>
+         
+	
+			<tr>
+		
+			<td><input id="q" type="button" value="Letras amarillo" onClick="cambiarColores(z)"/></td>
+			<td><input id="q" type="button" value="Agrandar Letras" onClick="zoomIn()"></td>
+			<td><input id="q" type="button" value="Disminuir Letra" onClick="zoomOut()"></td>
+			<td><input id="q" type="button" value="Invertir" onClick="cambiarFondo(h)"/></td>
+			
+			
+			</tr>
+		
+			 <tr>
+            <td width=25%;><h4><a href="#m">METAL</a></h4></td>
+            <td width=25%;><h4><a href=#s>SLAM</a></h4></td>
+            <td width=25%;><h4><a href=#h>HARDCORE</a></h4></td>
+            <td width=25%;><h4><a class="button" href="#popup1">SUGERENCIAS</a></h4></td>
+          </tr>
+			
+        </table>
+      </nav>
+      <div id="popup1" class="overlay">
+        <div class="popup"> <a class="close" href="#">&times;</a>
+          <form class="content">
+            <p>Nick:
+              <input type="text" name="nombre" size="20" />
+            </p>
+            <p>Email:
+              <input type="email" name="Email" size="20"/>
+            </p>
+            <p>Sugiere una banda:
+              <TEXTAREA NAME="texto1" ROWS="5" COLS="40"></TEXTAREA>
+            </p>
+            <input type="submit" value="Enviar"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <catalog>
+    <CD>
+      <div>
+        <input type="checkbox" class="read-more-state" id="post-2"/>
+        <Generos id="Metal" class="read-more-wrap">
+          <table class="discos">
+            <tr>
+              <td rowspan="6">
+				  <td rowspan="6"><a id="m" href="https://www.amazon.es/Mer-Noms-Explicit-Perfect-Circle/dp/B008P2YK7O/ref=sr_1_1?ie=UTF8&qid=1551986821&sr=8-1&keywords=mer+de+noms" target="_blank"><img  src="img/merdenoms.jpg" width="250" height="250" alt="merdenoms" title="Pincha para comprar"/>
+				</td>
+              <h5><td>Autor:</td></h5>
+              <td><Author>A Perfect Circle</Author></td>
+            </tr>
+            <tr>
+             <h5> <td>Album:</td></h5>
+              <td><Album>Mer De Noms</Album></td>
+            </tr>
+            <tr>
+            <h5>  <td>Genero:</td></h5>
+              <td><Genre>Progressive Metal</Genre></td>
+            </tr>
+            <tr>
+             <h5> <td>Precio:</td></h5>
+              <td><Price>12'95€</Price></td>
+            </tr>
+            <tr>
+             <h5> <td>Fecha de Publicación:</td></h5>
+              <td><PublishDate>23/05/2000</PublishDate></td>
+            </tr>
+            <tr>
+             <h5> <td>Discografía</td></h5>
+              <td><Discografia>virgin records</Discografia></td>
+            </tr>
+          </table>
+          <br>
+          <table class="read-more-target">
+            <tr>
+              <td rowspan="6"><a href="https://www.amazon.es/Vol-3-Subliminal-Verses-Slipknot/dp/B008L6HX6O/ref=sr_1_13?ie=UTF8&qid=1551987023&sr=8-13&keywords=slipknot" target="_blank"/><img src="img/subliminal text.jpg"  alt="slipknot" style="margin-left:70px; margin-right: 10px" title="Pincha para comprar" /></td>
+              <td>Autor:</td></h5>
+              <td><Author>Slipknot</Author></td>
+            </tr>
+            <tr>
+             <h5> <td>Album:</td></h5>
+              <td><Album>Vol. 3 The Subliminal Verses</Album></td>
+            </tr>
+            <tr>
+            <h5>  <td>Genero:</td></h5>
+              <td><Genre>Alternative Metal</Genre></td>
+            </tr>
+            <tr>
+            <h5>  <td>Precio:</td></h5>
+              <td><Price>7'99€</Price></td>
+            </tr>
+            <tr>
+            <h5>  <td>Fecha de Publicación:</td></h5>
+              <td><PublishDate>24/05/2004</PublishDate></td>
+            </tr>
+            <tr>
+             <h5> <td>Discografía</td></h5>
+              <td><Discografia>Roadrunner Records</Discografia></td>
+            </tr>
+          </table>
+        </Generos>
+        <label for="post-2" class="read-more-trigger"></label>
+      </div>
+      <div>
+        <input type="checkbox" class="read-more-state" id="post-3"/>
+        <Generos id="slam" class="read-more-wrap">
+          <table class="discos">
+            <tr>
+              <td rowspan="6"><a id="s" href="https://www.amazon.es/Misery-Sermon-Explicit-Slaughter-Prevail/dp/B06XP4ZHWC/ref=sr_1_1?ie=UTF8&qid=1551987106&sr=8-1&keywords=slaughter+to+prevail" target="_blank"><img  src="img/misery.jpg" width="250" height="250" alt="slagthertoprevail" title="Pincha para comprar"/></a></td>
+             <h5> <td>Autor:</td></h5>
+              <td><Author>Slaughter to Prevail</Author></td>
+            </tr>
+            <tr>
+            <h5>  <td>Album:</td></h5>
+              <td><Album>Misery Sermon</Album></td>
+            </tr>
+            <tr>
+            <h5>  <td>Genero:</td></h5>
+              <td><Genre>Slam</Genre></td>
+            </tr>
+            <tr>
+            <h5>  <td>Precio:</td></h5>
+              <td><Price>14.10€</Price></td>
+            </tr>
+            <tr>
+           <h5>   <td>Fecha de Publicación:</td></h5>
+              <td><PublishDate>04/05/2017</PublishDate></td>
+            </tr>
+            <tr>
+             <h5> <td>Discografía</td></h5>
+              <td><Discografia>Sumerian Records</Discografia></td>
+            </tr>
+          </table>
+          <table class="read-more-target">
+            <tr>
+              <td rowspan="6"><a href="https://www.amazon.es/Misanthropy-Explicit-Lacerate-Thy-Maker/dp/B07CWHQ5CB/ref=sr_1_1?ie=UTF8&qid=1551987143&sr=8-1&keywords=lacerate+thy+maker" target="_blank"/><img src="img/lacerate.jpg"  alt="lacerate" style="margin-right: 11px" title="Pincha para comprar"/></td>
+             <h5> <td>Autor:</td></h5>
+              <td><Author>Lacerate Thy Maker</Author></td>
+            </tr>
+            <tr>
+             <h5> <td>Album:</td></h5>
+              <td><Album>Imminent</Album></td>
+            </tr>
+            <tr>
+            <h5>  <td>Genero:</td></h5>
+              <td><Genre>Slam/Deathcore</Genre></td>
+            </tr>
+            <tr>
+            <h5>  <td>Precio:</td></h5>
+              <td><Price>14.10€</Price></td>
+            </tr>
+            <tr>
+            <h5>  <td>Fecha de Publicación:</td></h5>
+              <td><PublishDate>08/05/2018</PublishDate></td>
+            </tr>
+            <tr>
+            <h5>  <td>Discografía</td></h5>
+              <td><Discografia>SlamWorldwide</Discografia></td>
+            </tr>
+          </table>
+        </Generos>
+        <label for="post-3" class="read-more-trigger"></label>
+      </div>
+      <div>
+        <input type="checkbox" class="read-more-state" id="post-4"/>
+        <Generos id="HardCore" class="read-more-wrap">
+          <table class="discos">
+            <tr>
+              <td rowspan="6"><a id="h" href="https://www.amazon.es/Scatter-Ashes-Brutality-Will-Prevail/dp/B01KBHQS7K/ref=sr_1_4?ie=UTF8&qid=1551987215&sr=8-4&keywords=brutality+will" target="_blank"><img src="img/ashes.jpg" width="250" height="250" alt="ashes" title="Pincha para comprar"/></a></td>
+            <h5>  <td>Autor:</td></h5>
+              <td><Author>Brutality Will Prevail</Author></td>
+            </tr>
+            <tr>
+            <h5>  <td>Album:</td></h5>
+              <td><Album>Scatter the Ashes</Album></td>
+            </tr>
+            <tr>
+            <h5>  <td>Genero:</td></h5>
+              <td><Genre>Hardcore/Deathcore</Genre></td>
+            </tr>
+            <tr>
+           <h5>   <td>Precio:</td></h5>
+              <td><Price>27.99€</Price></td>
+            </tr>
+            <tr>
+            <h5>  <td>Fecha de Publicación:</td></h5>
+              <td><PublishDate>12/05/2015</PublishDate></td>
+            </tr>
+            <tr>
+             <h5> <td>Discografía</td></h5>
+              <td><Discografia>Siege Of Amida</Discografia></td>
+            </tr>
+          </table>
+          <br>
+          <table class="read-more-target">
+            <tr>
+              <td rowspan="6"><a href="https://www.amazon.es/Laugh-Tracks-Knocked-Loose/dp/B07BTD8Y6P/ref=sr_1_1?ie=UTF8&qid=1551987261&sr=8-1&keywords=knocked+loose" target="_blank"/><img src="img/tracks.jpg"  alt="tracks" style="margin-right: 10px" title="Pincha para comprar"/></td>
+            <h5>  <td>Autor:</td></h5>
+              <td><Author>Knocked Loose</Author></td>
+            </tr>
+            <tr>
+            <h5>  <td>Album:</td></h5>
+              <td><Album>Laugh Tracks</Album></td>
+            </tr>
+            <tr>
+            <h5>  <td>Genero:</td></h5>
+              <td><Genre>Hardcore/Deathcore</Genre></td>
+            </tr>
+            <tr>
+            <h5>  <td>Precio:</td></h5>
+              <td><Price>21.41€</Price></td>
+            </tr>
+            <tr>
+             <h5> <td>Fecha de Publicación:</td></h5>
+              <td><PublishDate>15/09/2016</PublishDate></td>
+            </tr>
+            <tr>
+             <h5> <td>Discografía</td></h5>
+              <td><Discografia>Pure Noise Records</Discografia></td>
+            </tr>
+          </table>
+        </Generos>
+        <label for="post-4" class="read-more-trigger"></label>
+      </div>
+    </CD>
+  </catalog>
+	
+	
+	<table class="read-more-target">
+	<!--reproductor-->
+		
+	<div id="player" > <img src="" class="cover" id="art" />
+                  <div class="trackinfo">
+                    <p id="title"></p>
+                    <p id="artist"></p>
+                  </div>
+                  <div id="track" style="width:250px">
+                    <div id="progress"></div>
+                    <div id="handler"></div>
+                  </div>
+                  <div class="container" >
+                    <div class="info">
+                      <div class="cont">
+                        <button id="prev" class="nov"> <img src="img/prev.png"/></button>
+                        <button id="play" class="nov"> <img class="pad" src="img/play.png"/> </button>
+                        <button id="next" class="nov"> <img src="img/next.png"/> </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+			
+		
+	</table>
+  <div id="volver"><a href="#p" style="color: white">VOLVER</a></div>
+</center>
+	<script src="jvs/java.js"></script>
+	 
+</body>
+</html>
