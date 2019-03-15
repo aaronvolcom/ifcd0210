@@ -1,0 +1,22 @@
+public class Carrito_de_compras {
+
+    private int cartId;
+
+    private int productId;
+
+    private int quantity;
+
+    private int dateAdded;
+
+    public void addCartItem() {
+    }
+
+    public void updateQuantity() {
+    }
+
+    public void viewCartDetails() {
+    }
+
+    public void checkOut() {
+    }
+}

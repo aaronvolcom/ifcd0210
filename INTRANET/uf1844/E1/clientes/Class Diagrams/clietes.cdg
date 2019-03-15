@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="clietes">
+  <ClassDiagramComponents>
+    <Class name="Cliente" package="" visibility="public" xPosition="26.0" yPosition="10.0">
+      <Fields>
+        <Field name="customerName" type="String" visibility="private"/>
+        <Field name="address" type="String" visibility="private"/>
+        <Field name="creditCardInfo" type="String" visibility="private"/>
+        <Field name="shippingInfo" type="String" visibility="private"/>
+        <Field name="accountBalance" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="register" returnType="void" visibility="public"/>
+        <Method name="login" returnType="void" visibility="public"/>
+        <Method name="updateProfile" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Usuario" package="" visibility="public" xPosition="214.0" yPosition="10.0">
+      <Fields>
+        <Field name="userId" type="String" visibility="private"/>
+        <Field name="password" type="String" visibility="private"/>
+        <Field name="loginStatus" type="String" visibility="private"/>
+        <Field name="registerDate" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="verifyLogin" returnType="Boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Pedido" package="" visibility="public" xPosition="214.0" yPosition="219.0">
+      <Fields>
+        <Field name="orderId" type="int" visibility="private"/>
+        <Field name="dateCreated" type="String" visibility="private"/>
+        <Field name="dateSipped" type="String" visibility="private"/>
+        <Field name="customerName" type="String" visibility="private"/>
+        <Field name="customerId" type="String" visibility="private"/>
+        <Field name="status" type="String" visibility="private"/>
+        <Field name="shippingId" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="placerOrder" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Carrito_de_compras" package="" visibility="public" xPosition="16.0" yPosition="295.0">
+      <Fields>
+        <Field name="cartId" type="int" visibility="private"/>
+        <Field name="productId" type="int" visibility="private"/>
+        <Field name="quantity" type="int" visibility="private"/>
+        <Field name="dateAdded" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="addCartItem" returnType="void" visibility="public"/>
+        <Method name="updateQuantity" returnType="void" visibility="public"/>
+        <Method name="viewCartDetails" returnType="void" visibility="public"/>
+        <Method name="checkOut" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Información_de_envio" package="" visibility="public" xPosition="443.0" yPosition="162.0">
+      <Fields>
+        <Field name="shippingId" type="int" visibility="private"/>
+        <Field name="shippingType" type="String" visibility="private"/>
+        <Field name="shippingCost" type="int" visibility="private"/>
+        <Field name="shippingRegionld" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="updateShippingInfo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Administrador" package="" visibility="public" xPosition="443.0" yPosition="10.0">
+      <Fields>
+        <Field name="adminName" type="String" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="updateCatalog" returnType="Boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Detalles_del_pedido" package="" visibility="public" xPosition="443.0" yPosition="355.0">
+      <Fields>
+        <Field name="orderId" type="int" visibility="private"/>
+        <Field name="productId" type="int" visibility="private"/>
+        <Field name="productName" type="String" visibility="private"/>
+        <Field name="quantity" type="int" visibility="private"/>
+        <Field name="unitCost" type="float" visibility="private"/>
+        <Field name="subtotal" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="calcprice" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="C" source="Pedido" target="Información_de_envio" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="tiene un " source="Pedido" target="Detalles_del_pedido" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="B" source="Cliente" target="Pedido" type="Composition" sourceCardinality="0..1" targetCardinality="0..1"/>
+    <HasRelation name="A" source="Cliente" target="Carrito_de_compras" type="Composition" sourceCardinality="0..1" targetCardinality="0..1"/>
+    <IsRelation name="is" source="Administrador" target="Usuario"/>
+    <IsRelation name="is" source="Cliente" target="Usuario"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
