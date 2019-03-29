@@ -1,0 +1,5 @@
+ Nombre: ar
+ Apellidos: saf
+ Edad: 20
+ Genero: Hombre
+ Otros datos: sdb
