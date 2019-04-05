@@ -10,9 +10,9 @@
 </style>
 </head>
 <body>
- 
+ <center>
 <%
-   /*podemos leer los datos del request a una variable*/
+   
    String edad=(String)request.getParameter("edad");
    String prefieres=(String)request.getParameter("preferencia");
    out.print("tu nombre es "+request.getParameter("nombre")+" "+request.getParameter("apellido"));
@@ -23,8 +23,9 @@
    out.print("<br/>");
    out.print("y te gusta "+prefieres+" ");
    out.print("<br/>");
-   /*podemos usar los datos directamente desde el request*/
    out.print("Bienvenido  "+ request.getParameter("nombre").toString().toUpperCase());
  %>
+ 
+ </center>
 </body>
 </html>

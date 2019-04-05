@@ -10,7 +10,7 @@
 </style>
 </head>
 <body>
-
+<center>
 <div id=cuadro>
 <form action="servelet1" method="post">
 <table class="blueTable">
@@ -51,5 +51,6 @@
 </form>
 
 </div>
+</center>
 </body>
 </html>
