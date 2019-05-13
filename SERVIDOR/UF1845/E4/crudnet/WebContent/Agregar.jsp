@@ -36,7 +36,7 @@
                     <td class="text-center"><input type="text" name="apellidos" id="apellidos"></td>
                     <td class="text-center"><input type="number" name="edad" id="edad"></td>
                     <td class="text-center"><select name="ocupacion" form="nuevoUser" id="ocupacion">
-                            <option value="NSNC">Estudiante</option>
+                            <option value="Estudiante">Estudiante</option>
                             <option value="Desempleado">Desempleado</option>
                             <option value="TrabajadorCP">Trabajador por cuenta
                                 propia</option>

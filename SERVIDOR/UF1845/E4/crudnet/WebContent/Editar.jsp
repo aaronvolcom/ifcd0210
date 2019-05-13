@@ -3,7 +3,7 @@
 <%@page import="java.sql.PreparedStatement" %>
 <%@page import="java.sql.ResultSet" %>
 <%@page import="java.sql.DriverManager"%>
-<%@page import="java.sql.Connection" %>
+
 <%@page import="java.sql.*" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -11,7 +11,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
 <title>Editar Usuario</title>
 </head>
 <body>
@@ -35,7 +35,7 @@
         <div class="container">
 
         <h1>Modificar usuario</h1>
-        <form id="mUser" action="" method="POST">
+        <form action="" method="post" class="form-control">
         <table class="table table-bordered">
                 <tr>
                     
@@ -48,13 +48,13 @@
                 </tr>
                 <tr>
 
-                    <td class="text-center"><input type="text" name="Nick" id="Nick" readonly="" value="<%= rs.getString("Nick")%>"></td>
-                    <td class="text-center"><input type="password" name="contraseña" id="contraseña" value="<%= rs.getString("Contraseña")%>"></td>
-                    <td class="text-center"><input type="text" name="nombre" id="nombre" value="<%= rs.getString("Nombre")%>"></td>
-                    <td class="text-center"><input type="text" name="apellidos" id="apellidos" value="<%= rs.getString("Apellidos")%>"></td>
-                    <td class="text-center"><input type="number" name="edad" id="edad" value="<%= rs.getInt("Edad")%>"></td>
-                    <td class="text-center"><select name="ocupacion" form="nuevoUser" id="ocupacion">
-                            <option value="NSNC">Estudiante</option>
+                    <td ><input type="text" class="form-control" name="Nick" id="Nick" readonly="" value="<%= rs.getString("Nick")%>"></td>
+                    <td ><input type="password" class="form-control" name="contraseña" id="contraseña" value="<%= rs.getString("Contraseña")%>"></td>
+                    <td ><input type="text" class="form-control" name="nombre" id="nombre" value="<%= rs.getString("Nombre")%>"></td>
+                    <td ><input type="text" class="form-control" name="apellidos" id="apellidos" value="<%= rs.getString("Apellidos")%>"></td>
+                    <td ><input type="number" class="form-control" name="edad" id="edad" value="<%= rs.getInt("Edad")%>"></td>
+                    <td ><select name="ocupacion"  class="form-control" form="nuevoUser" id="ocupacion">
+                            <option value="Estudiante">Estudiante</option>
                             <option value="Desempleado">Desempleado</option>
                             <option value="TrabajadorCP">Trabajador por cuenta
                                 propia</option>
@@ -76,26 +76,23 @@ Integer Edad;
     String Nick, Contraseña, Nombre, Apellidos, Ocupacion;
     
     Nick = request.getParameter("Nick");
-    Contraseña = request.getParameter("Contraseña");
-    Nombre = request.getParameter("Nombre");
-    Apellidos = request.getParameter("Apellidos");
+    Contraseña = request.getParameter("contraseña");
+    Nombre = request.getParameter("nombre");
+    Apellidos = request.getParameter("apellidos");
     
     try {
-        Edad = Integer.parseInt(request.getParameter("Edad"));
+        Edad = Integer.parseInt(request.getParameter("edad"));
         }
     catch(Exception e) {
         Edad = 0;
     }
     
     
-    Ocupacion = request.getParameter("Ocupacion");
+    Ocupacion = request.getParameter("ocupacion");
 
 
 if (Nick != null && Contraseña != null && Nombre != null && Apellidos != null && Edad != null  && Ocupacion != null){
-        ps = con.prepareStatement(
-                "update usuario set id= '"
-                        + Nick + "'Nick'" + Contraseña + "'Contraseña'" + Nombre + "'Nombre'" + Apellidos + "'Apellidos'" + Edad
-                        + "'Edad'" + Ocupacion + "'Ocupacion'");
+        ps = con.prepareStatement("update usuario set Contraseña='"+Contraseña+"',Nombre='"+Nombre+"',Apellidos='"+Apellidos+"',Edad='"+Edad+"',Ocupacion='" +Ocupacion+"'where idUsuario="+iduser);
     ps.executeUpdate();
     response.sendRedirect("index.jsp");
     }
